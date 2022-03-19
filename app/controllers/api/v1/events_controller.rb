@@ -59,7 +59,7 @@ module Api
       end
 
       def fetch_event
-        @event = Event.find(params[:id])
+        @event = Event.includes(user_events: :user).find(params[:id])
       end
 
       def render_all_events(parameters)

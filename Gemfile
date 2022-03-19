@@ -54,6 +54,7 @@ group :test do
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'shoulda-matchers'
+  gem 'simplecov', require: false
 end
 
 group :rubocop do
